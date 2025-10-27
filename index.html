@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JS Mini — Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <h1>Password Generator 🔐</h1>
+  <div class="card">
+    <label><input type="checkbox" id="upper" checked> Uppercase</label>
+    <label><input type="checkbox" id="lower" checked> Lowercase</label>
+    <label><input type="checkbox" id="digits" checked> Digits</label>
+    <label><input type="checkbox" id="symbols"> Symbols</label>
+    <label>Length: <input type="number" id="length" min="6" max="64" value="12"></label>
+    <button id="gen">Generate</button>
+    <input id="out" readonly>
+    <button id="copy">Copy</button>
+  </div>
+  <p class="hint">Pure JavaScript, no libraries.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
