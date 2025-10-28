@@ -1,26 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JS Mini — Password Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<main class="wrap">
-  <h1>Password Generator 🔐</h1>
-  <div class="card">
-    <label><input type="checkbox" id="upper" checked> Uppercase</label>
-    <label><input type="checkbox" id="lower" checked> Lowercase</label>
-    <label><input type="checkbox" id="digits" checked> Digits</label>
-    <label><input type="checkbox" id="symbols"> Symbols</label>
-    <label>Length: <input type="number" id="length" min="6" max="64" value="12"></label>
-    <button id="gen">Generate</button>
-    <input id="out" readonly>
-    <button id="copy">Copy</button>
-  </div>
-  <p class="hint">Pure JavaScript, no libraries.</p>
-</main>
-<script src="app.js"></script>
+  <main class="card">
+    <h1>🔐 Password Generator</h1>
+
+    <div class="row">
+      <label for="length">Length</label>
+      <input id="length" type="number" min="8" max="64" value="16">
+    </div>
+
+    <div class="grid">
+      <label><input id="lower" type="checkbox" checked> a–z</label>
+      <label><input id="upper" type="checkbox" checked> A–Z</label>
+      <label><input id="digits" type="checkbox" checked> 0–9</label>
+      <label><input id="symbols" type="checkbox"> !@#$%</label>
+    </div>
+
+    <div class="output">
+      <input id="result" type="text" readonly placeholder="Your password will appear here">
+      <button id="copy" class="ghost">Copy</button>
+    </div>
+
+    <button id="generate" class="primary">Generate</button>
+    <p class="hint">Tip: увімкни кілька наборів символів для більшої надійності.</p>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
