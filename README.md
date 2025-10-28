@@ -1,19 +1,48 @@
-# JS Password Generator
+# 🔐 Password Generator
 
-Live: https://ivanrakhilchuk.github.io/js-mini-project/  
-Code: https://github.com/IvanRakhilchuk/js-mini-project
+**Live demo:** [ivanrakhilchuk.github.io/js-mini-project](https://ivanrakhilchuk.github.io/js-mini-project)  
+**Code:** [GitHub Repository](https://github.com/IvanRakhilchuk/js-mini-project)
 
-## About
-Невеликий застосунок для генерації паролів із вибором довжини та наборів символів. Є кнопка Copy.
+---
 
-## Stack
-- HTML + CSS + JavaScript
+## 🧠 About the project
+Невеликий, але повністю робочий застосунок для генерації надійних паролів.  
+Створений для практики **JavaScript**, **HTML** і **CSS**, а також для публікації через **GitHub Pages**.
 
-## Features
-- Вибір довжини (8–64)
-- Літери (a–z, A–Z), цифри, символи — вмикаються/вимикаються
-- Копіювання в буфер
+---
 
-## Roadmap
-- [ ] Індикатор надійності
-- [ ] Збереження налаштувань у localStorage
+## ⚙️ Features
+✅ Вибір довжини пароля (8–64 символи)  
+✅ Налаштування наборів символів:  
+- a–z (малі літери)  
+- A–Z (великі літери)  
+- 0–9 (цифри)  
+- !@#$% (спецсимволи)  
+✅ Копіювання пароля в буфер  
+✅ Адаптивний дизайн  
+
+---
+
+## 🧩 Technologies
+- HTML5  
+- CSS3  
+- JavaScript (ES6)  
+- GitHub Pages  
+
+---
+
+## 🚀 Preview
+![Password Generator Screenshot](https://ivanrakhilchuk.github.io/js-mini-project/og-image.png)
+
+---
+
+## 🧭 Roadmap
+- [ ] Додати індикатор складності пароля  
+- [ ] Додати темну/світлу тему  
+- [ ] Додати збереження налаштувань у localStorage  
+
+---
+
+## 👨‍💻 Author
+**Ivan Rakhilchuk**  
+[GitHub Profile](https://github.com/IvanRakhilchuk) • [Portfolio Website](https://ivanrakhilchuk.github.io/portfolio-website/)
