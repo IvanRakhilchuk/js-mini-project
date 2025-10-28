@@ -51,7 +51,14 @@ el("generate").addEventListener("click", generate);
 el("copy").addEventListener("click", () => {
   const r = el("result");
   r.select(); r.setSelectionRange(0, 9999);
-  document.execCommand("copy");
-  el("copy").textContent = "Copied!";
+ el("copy").addEventListener("click", async () => {
+  try {
+    await navigator.clipboard.writeText(el("result").value);
+    el("copy").textContent = "Copied!";
+  } catch {
+    el("copy").textContent = "Failed";
+  }
   setTimeout(() => (el("copy").textContent = "Copy"), 900);
+});
+
 });
